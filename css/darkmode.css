@@ -1,0 +1,200 @@
+
+/* DarkMode*/ 
+
+.suiche{
+  
+	background-color: #343D5B;
+	border-radius: 1000PX;
+	border: none;
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	outline: none;
+    color: white;
+}
+
+span{
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+ 
+
+.suiche::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow:  0px 0px 0px 1px rgba(0, 0, 0, .5);
+ 
+    
+}
+
+.suiche.active{
+  background-color: orange;
+  color: #111111;
+}
+
+.active::after{
+  right: 0;
+  left: unset;
+
+}
+
+body.dark{
+    background-color: #2e2e2e;
+    transition: 1s ease all;
+    color: white;
+    -webkit-transition: 1s ease all;
+    -moz-transition: 1s ease all;
+    -ms-transition: 1s ease all;
+    -o-transition: 1s ease all;
+}
+
+
+body.dark {
+    background-color: #111111;
+    color: white;
+    transition: 1s ease all;
+    -webkit-transition: 1s ease all;
+    -moz-transition: 1s ease all;
+    -ms-transition: 1s ease all;
+    -o-transition: 1s ease all;
+}
+
+body.dark section {
+    background-color: #111111;
+   
+    color: white;
+    transition: 1s ease all;
+    -webkit-transition: 1s ease all;
+    -moz-transition: 1s ease all;
+    -ms-transition: 1s ease all;
+    -o-transition: 1s ease all;
+}
+
+ 
+body.dark  .textos-header{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1053%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(17%2c 17%2c 17%2c 1)'%3e%3c/rect%3e%3cpath d='M44.63%2c106.124C69.531%2c106.998%2c96.128%2c103.043%2c110.252%2c82.517C126.162%2c59.396%2c130.031%2c27.692%2c114.84%2c4.093C100.522%2c-18.151%2c71.019%2c-21.276%2c44.63%2c-19.429C21.891%2c-17.838%2c1.257%2c-6.73%2c-10.402%2c12.857C-22.351%2c32.931%2c-25.34%2c58.052%2c-13.468%2c78.172C-1.763%2c98.01%2c21.61%2c105.316%2c44.63%2c106.124' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-66.64 -8.02 a58.62 58.62 0 1 0 117.24 0 a58.62 58.62 0 1 0 -117.24 0z' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M130.219%2c281.777C185.996%2c283.136%2c243.254%2c259.85%2c269.133%2c210.421C293.662%2c163.571%2c272.59%2c109.012%2c243.946%2c64.558C218.132%2c24.495%2c177.862%2c-6.41%2c130.219%2c-5.168C84.371%2c-3.973%2c50.219%2c31.088%2c26.319%2c70.232C1.038%2c111.638%2c-18.837%2c160.383%2c2.55%2c203.928C26.101%2c251.88%2c76.812%2c280.476%2c130.219%2c281.777' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1284.69 -31.36 a11.95 11.95 0 1 0 23.9 0 a11.95 11.95 0 1 0 -23.9 0z' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1240.2 13.12 a100.92 100.92 0 1 0 201.84 0 a100.92 100.92 0 1 0 -201.84 0z' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1395.915%2c161.841C1427.358%2c161.269%2c1449.883%2c135.386%2c1465.719%2c108.216C1481.703%2c80.791%2c1493.229%2c48.357%2c1478.422%2c20.279C1462.805%2c-9.336%2c1429.386%2c-23.38%2c1395.915%2c-24.154C1360.868%2c-24.964%2c1323.434%2c-14.403%2c1306.522%2c16.304C1290.024%2c46.26%2c1303.67%2c81.697%2c1321.569%2c110.838C1338.428%2c138.285%2c1363.709%2c162.427%2c1395.915%2c161.841' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M42.583%2c560.465C65.777%2c559.419%2c81.109%2c539.622%2c93.353%2c519.895C106.612%2c498.532%2c122.712%2c473.353%2c110.173%2c451.56C97.619%2c429.741%2c67.705%2c430.061%2c42.583%2c431.655C20.89%2c433.032%2c0.057%2c440.955%2c-11.621%2c459.288C-24.246%2c479.108%2c-27.886%2c504.146%2c-16.788%2c524.861C-5.108%2c546.662%2c17.875%2c561.579%2c42.583%2c560.465' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-62.45 435.79 a50.24 50.24 0 1 0 100.48 0 a50.24 50.24 0 1 0 -100.48 0z' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-83.19 456.51 a91.7 91.7 0 1 0 183.4 0 a91.7 91.7 0 1 0 -183.4 0z' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1205.26 496.07 a170.81 170.81 0 1 0 341.62 0 a170.81 170.81 0 1 0 -341.62 0z' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1229.03 472.31 a123.28 123.28 0 1 0 246.56 0 a123.28 123.28 0 1 0 -246.56 0z' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1289.95 411.38 a1.43 1.43 0 1 0 2.86 0 a1.43 1.43 0 1 0 -2.86 0z' fill='rgba(255%2c 255%2c 255%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1053'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+    color: white;
+    transition: 1s ease all;
+    border-bottom:  solid white 1px;
+    
+    -webkit-transition: 1s ease all;
+    -moz-transition: 1s ease all;
+    -ms-transition: 1s ease all;
+    -o-transition: 1s ease all;
+}
+
+
+
+body.dark nav {
+    background-color: #111111;
+    color: rgb(255, 255, 255);
+    transition: 1s ease all;
+    -webkit-transition: 1s ease all;
+    -moz-transition: 1s ease all;
+    -ms-transition: 1s ease all;
+    -o-transition: 1s ease all;
+}
+
+body.dark footer {
+    border-top: 1px solid white;
+    background-color: #111111;
+    
+    transition: 1s ease all;
+    -webkit-transition: 1s ease all;
+    -moz-transition: 1s ease all;
+    -ms-transition: 1s ease all;
+    -o-transition: 1s ease all;
+}
+
+body.dark footer h4 {
+     color: white;
+}
+
+body.dark footer p {
+    color: white;
+}
+
+
+body.dark #portafolio {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color: #111111;
+    color: white;
+    transition: 1s ease all;
+    -webkit-transition: 1s ease all;
+    -moz-transition: 1s ease all;
+    -ms-transition: 1s ease all;
+    -o-transition: 1s ease all;
+}
+
+.about-services{
+    border-top: 1px solid white;
+}
+
+ 
+
+body.dark #study {
+    border-top: 1px solid white;
+    background-color: #111111;
+    color: white;
+    transition: 1s ease all;
+    -webkit-transition: 1s ease all;
+    -moz-transition: 1s ease all;
+    -ms-transition: 1s ease all;
+    -o-transition: 1s ease all;
+}
+
+body.dark .card {
+    box-shadow: 0px 5px 5px white;
+    border-top: 1px solid white;
+    background-color: #111111;
+    color: white;
+    transition: 1s ease all;
+    -webkit-transition: 1s ease all;
+    -moz-transition: 1s ease all;
+    -ms-transition: 1s ease all;
+    -o-transition: 1s ease all;
+}
+body.dark h1{
+    box-shadow: 0px 5px 5px white;
+    border-top: 1px solid white;
+    background-color: #111111;
+    color: white;
+    transition: 1s ease all;
+    -webkit-transition: 1s ease all;
+    -moz-transition: 1s ease all;
+    -ms-transition: 1s ease all;
+    -o-transition: 1s ease all;
+}
+
+ 
+
+body.dark .card p {
+    color: white;
+    transition: 1s ease all;
+    -webkit-transition: 1s ease all;
+    -moz-transition: 1s ease all;
+    -ms-transition: 1s ease all;
+    -o-transition: 1s ease all;
+}
+
+body.dark header {
+     height: 470px;
+
+     
+}
+
